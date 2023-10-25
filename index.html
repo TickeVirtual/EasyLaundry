@@ -303,6 +303,8 @@ img#impresoraButton {
     
      <div id="thermal-pos">
         
+        <div id="thermal-pos">
+        
         <div class="label">
              <img src="https://drive.google.com/uc?export=download&id=19rFljRe0a7tLe07xLqQlIBL7OXThmwYE" class="ImganelLogo" width= "40%" id "foto"
             <br/>
@@ -334,9 +336,15 @@ img#impresoraButton {
         </div>
 
         <!-- <div class="line">***********************************************</div> -->
-            
         
-        
+        <div class="label">
+            <p class="fecha_entrega">
+                <b>
+                    FECHA DE ENTREGA: <br>
+                    <span id="hora"></span>
+                </b>
+            </p>
+        </div>
    
         <table class="table">
             <tbody id="tablaBody">
@@ -397,7 +405,7 @@ img#impresoraButton {
             
             
             // Mensaje a enviar junto con el enlace
-            var message = 'Hola!!somos de la lavandería Easy Laundry , somos una lavandería que cuida el medio ambiente ♻️♻️♻️♻️♻️, por ello adjuntamos su ticket de atención  virtual. Click en el link para ver el ticket 👇🏻👇🏻👇🏻 ' + currentURL;
+            var message = 'Hola!!somos de la lavandería Mil Burbujas , somos una lavandería que cuida el medio ambiente ♻️♻️♻️♻️♻️, por ello adjuntamos su ticket de atención  virtual. Click en el link para ver el ticket 👇🏻👇🏻👇🏻 ' + currentURL;
             
                // Código de país fijo
             //var countryCode = '+51';
@@ -470,18 +478,12 @@ document.getElementById('impresoraButton').addEventListener('click', printTicket
         <br/>
         <div class="policy">
             <p class="policy-title">
-                <b></b>
+                <b>Favor de confirmar si desea boleta o factura,
+Aceptamos todos los medios de pago,recuerde que
+contamos con la garantía de satisfacción del 100%</b>
             </p>
         
-            <p class="m-0">
-               Favor de confirmar si desea boleta o factura,
-Aceptamos todos los medios de pago,recuerde que
-contamos con la garantía de satisfacción del 100%
-    
-        <div class="policy">
-            <p class="policy-title">
-                <b>Gracias por su Preferencial!!</b>
-            </p>
+
     </div>
     <script>
         var nroBoletaElement = document.getElementById("nro_boleta_id").textContent = nro_boleta;
@@ -511,3 +513,6 @@ if (currentURL.indexOf('sharelink=1') !== -1) {
     impresoraButton.style.display = 'none';
 }
 </script>
+
+</body>
+</html>
